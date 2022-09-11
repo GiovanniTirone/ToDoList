@@ -1,0 +1,122 @@
+#add_menu{
+    position: absolute;
+    background-color:aqua ;
+    border: 2px solid red;
+    color : red; 
+    top: 30%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+   /*width: 100px;
+    height: 100px;*/
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#title_div #description_div #dueDate_div #priority_div {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#title_div{
+    grid-row: 1/2;
+}
+
+#description_div{
+    grid-row: 2/3;
+}
+
+#dueDate_div{
+    grid-row: 3/4;
+}
+
+#priority_div{
+    grid-row: 4/5;
+}
+
+/*
+#title_div #title_input #title_label{
+    grid-row: 1/2;
+}
+
+
+#description_div #description_label #description_input{
+    grid-row: 2/3;
+}
+
+
+#dueDate_div #dueDate_label #dueDate_input{
+    grid-row: 3/4;
+}
+
+
+#priority_div #priority_label #priority_input{
+    grid-row: 4/5;
+}
+
+#title_div #description_div #dueDate_div #priority_div {
+    grid-column: 1/3;
+}*/
+
+#title_label #descriptio_label #dueDate_label #priority_label{
+    grid-column: 1/2;
+}
+
+#title_input #description_input #dueDate_input #priority_input {
+    grid-column: 2/3;
+}
+
+#priority_input{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+}
+
+#add_btn{
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+
+.toDo_div {
+    max-height: 300px;
+    min-width: 150px;
+    padding: 10px;
+    display:grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 20px min(70px,1fr) 40px 40px 30px 30px;
+    border: 1px solid black;
+}
+
+.toDo_title_div{
+    grid-row: 1/2;
+    font-size: medium;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toDo_description_div{
+    grid-row: 2/3;
+}
+
+.toDo_dueDate_div{
+    grid-row: 3/4;
+}
+
+.toDo_priority_div{
+    grid-row: 4/5;
+}
+
+.toDo_remove_div{
+    grid-row: 5/6;
+}
+
+.toDo_project_div{
+    grid-row:6/7;
+}
+
+
+

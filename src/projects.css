@@ -1,0 +1,128 @@
+#project_add_menu{
+    position: absolute;
+    background-color:aqua ;
+    border: 2px solid red;
+    color : red; 
+    top: 30%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+   /*width: 100px;
+    height: 100px;*/
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#project_title_div #project_description_div #project_dueDate_div #project_priority_div {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+#project_title_div{
+    grid-row: 1/2;
+}
+
+#project_description_div{
+    grid-row: 2/3;
+}
+
+#project_dueDate_div{
+    grid-row: 3/4;
+}
+
+#project_priority_div{
+    grid-row: 4/5;
+}
+
+/*
+#title_div #title_input #title_label{
+    grid-row: 1/2;
+}
+
+
+#description_div #description_label #description_input{
+    grid-row: 2/3;
+}
+
+
+#dueDate_div #dueDate_label #dueDate_input{
+    grid-row: 3/4;
+}
+
+
+#priority_div #priority_label #priority_input{
+    grid-row: 4/5;
+}
+
+#title_div #description_div #dueDate_div #priority_div {
+    grid-column: 1/3;
+}*/
+
+#project_title_label #project_descriptio_label #project_dueDate_label #project_priority_label{
+    grid-column: 1/2;
+}
+
+#project_title_input #project_description_input #project_dueDate_input #project_priority_input {
+    grid-column: 2/3;
+}
+
+#project_priority_input{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+}
+
+#project_add_btn{
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+
+.project_div {
+    max-height: 300px;
+    min-width: 150px;
+    padding: 10px;
+    display:grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 20px min(70px,1fr) 40px 40px 30px;
+    border: 1px solid black;
+}
+
+.project_title_div{
+    grid-row: 1/2;
+    font-size: medium;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project_description_div{
+    grid-row: 2/3;
+}
+
+.project_dueDate_div{
+    grid-row: 3/4;
+}
+
+.project_priority_div{
+    grid-row: 4/5;
+}
+
+.project_remove_div{
+    grid-row: 5/6;
+}
+
+#empty_project_div {
+    border: 1px solid black;
+    max-height: 300px;
+    min-width: 150px;
+
+}
+
+.empty_project_toDo_div{
+    border: 1px solid black;
+    max-height: 300px;
+    min-width: 150px;
+}
